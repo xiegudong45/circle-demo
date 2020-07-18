@@ -8,11 +8,11 @@ jobs:
         - master
     steps:
       - add_ssh_keys:
-        fingerprints:
-          - "d3:38:d6:27:c7:c3:bf:d9:9f:b6:85:77:80:01:e3:3a"
+          fingerprints:
+            - "d3:38:d6:27:c7:c3:bf:d9:9f:b6:85:77:80:01:e3:3a"
       - run:
-        name: Install
-        command: yarn install
+          name: Install
+          command: yarn install
       - run:
-        name: Build
-        command: yarn build
+          name: Build
+          command: yarn build
