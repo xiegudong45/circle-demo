@@ -10,6 +10,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "d3:38:d6:27:c7:c3:bf:d9:9f:b6:85:77:80:01:e3:3a"
+      - checkout
       - run:
           name: Install
           command: yarn install
