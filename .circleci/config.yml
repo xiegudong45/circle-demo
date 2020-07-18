@@ -3,12 +3,12 @@ jobs:
   build:
     docker:
       - image: circleci/node:10
-    branches:
-      only:
-        - master
+    # branches:
+    #   only:
+    #     - master
     steps:
-      - add_ssh_keys:
-        fingerprints:
-          - ""
+      # - add_ssh_keys:
+      #   fingerprints:
+      #     - ""
       - run: echo "A first hello"
       - run: npm -v
